@@ -36,8 +36,8 @@ Classify images from the Oxford-IIIT Pets dataset re-labelled into four broad ca
 Python version: 3.10+
 ```bash
 pip install -r requirements.txt
-jupyter notebook cnn_pet_classification.ipynb
-jupyter notebook vit_pet_classification.ipynb
+jupyter notebook
+# Then open cnn_pet_classification.ipynb or vit_pet_classification.ipynb in the browser, and run all cells in order
 ```
 
 ## Summary
