@@ -28,7 +28,7 @@ Classify images from the Oxford-IIIT Pets dataset re-labelled into four broad ca
   - CNN: 79%
   - ViT (trained from scratch): 56%
 - *Observations*:
-  - The CNN significantly outperforms the ViT, highlighting the data efficiency of convolutional architectures on small datasets.
+  - The CNN significantly outperforms the ViT, showing CNNs perform better on small datasets due to their inductive biases.
   - The ViT underperforms because transformers generally require substantially larger datasets to learn effective representations when trained from scratch.
   - This comparison emphasises the importance of aligning model architecture choice with dataset size.
      
@@ -46,4 +46,4 @@ The CNN was highly effective for this small-scale image classification task, as 
 ## Reproducibility/Notes
 - Random seeds are fixed where applicable to ensure consistent results.
 - Both model notebooks are self-contained and can be run end-to-end.
-- All necessary data is included in the `data/` folder.
+- Ensure the Oxford-IIIT Pets dataset is placed in the same folder as the notebooks before running.
