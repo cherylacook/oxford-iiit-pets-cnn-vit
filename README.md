@@ -6,7 +6,7 @@ Classify images from the Oxford-IIIT Pets dataset re-labelled into four broad ca
 ## Data
 This project requires the Oxford-IIIT Pets dataset. Due to the file size and structure, it is provided externally as a ZIP file.
 
-Download `oxford_pet_images.zip` from: https://huggingface.co/datasets/cherac/oxford-iiit-pets-cnn-vit/resolve/main/oxford-iiit-pet.zip
+Download `oxford-iiit-pet.zip` from: https://huggingface.co/datasets/cherac/oxford-iiit-pets-cnn-vit/resolve/main/oxford-iiit-pet.zip
 
 Once downloaded, *unzip the contents into the same folder as the notebooks.*
 
