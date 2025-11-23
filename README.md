@@ -3,20 +3,13 @@
 ## Objective
 Classify images from the Oxford-IIIT Pets dataset re-labelled into four broad categories (long-haired cats, short-haired cats, long-haired dogs, short-haired dogs) using both convolutional neural networks (CNN) and vision transformers (ViT). Examine how architectures with different inductive biases perform when trained on a relatively small image dataset.
 
-## Data and Pre-trained Embeddings
-This project requires the following files:
-- *Included in this repo:*
-  - `test.csv` - Test set for AG News.
-- *To download externally:*
-  - `train.csv` - Full AG News training dataset.
-    - Download from: https://huggingface.co/datasets/cherac/ag_news_classification_data/resolve/main/train.csv 
-  - `glove.6B.100d.txt` - Pre-trained GloVe embeddings.
-    - Download from: https://huggingface.co/datasets/cherac/ag_news_classification_data/resolve/main/glove.6B.100d.txt 
+## Data
+This project requires the Oxford-IIIT Pets dataset. Due to the file size and structure, it is provided externally as a ZIP file.
 
-**Instructions:** Place all files in the *same folder as the notebooks* before running them.
+Download `oxford_pet_images.zip` from: https://huggingface.co/datasets/cherac/oxford-iiit-pets-cnn-vit/resolve/main/oxford-iiit-pet.zip
+Once downloaded, *unzip the contents into the same folder as the notebooks.*
 
 ## Structure
-- `test.csv` - Test set for AG News.
 - `cnn_pet_classification.ipynb` - End-to-end CNN implementation.
 - `vit_pet_classification.ipynb` - End-to-end ViT implementation.
 - `compute_dataset_mean_std.ipynb` - Computes dataset channel-wise mean and standard deviation (std) for normalisation.
