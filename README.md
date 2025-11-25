@@ -1,7 +1,7 @@
 # Oxford-IIIT Pets Image Classification
 
 ## Objective
-Classify images from the Oxford-IIIT Pets dataset re-labelled into four broad categories (long-haired cats, short-haired cats, long-haired dogs, short-haired dogs) using both convolutional neural networks (CNN) and vision transformers (ViT). Examine how architectures with different inductive biases perform when trained on a relatively small image dataset.
+Classify images from the Oxford-IIIT Pets dataset re-labelled into four broad categories (long-haired cats, short-haired cats, long-haired dogs, short-haired dogs) using both convolutional neural networks (CNN) and vision transformers (ViT) built from scratch in PyTorch. Examine how architectures with different inductive biases perform when trained on a relatively small image dataset.
 
 ## Dataset
 This project requires the Oxford-IIIT Pets dataset. Due to the file size and structure, it is provided externally as a ZIP file.
@@ -11,17 +11,22 @@ Download `oxford-iiit-pet.zip` from: https://huggingface.co/datasets/cherac/oxfo
 Once downloaded, *unzip the contents into the same folder as the notebooks.*
 
 ## Structure
-- `cnn_pet_classification.ipynb` - End-to-end CNN implementation.
-- `vit_pet_classification.ipynb` - End-to-end ViT implementation.
+- `cnn_pet_classification.ipynb` - End-to-end CNN implementation from scratch in PyTorch.
+- `vit_pet_classification.ipynb` - End-to-end ViT implementation from scratch in PyTorch.
 - `compute_dataset_mean_std.ipynb` - Computes dataset channel-wise mean and standard deviation (std) for normalisation.
 - `requirements.txt` - Python dependencies.
+- `figures` - Folder containing screenshots of TensorBoard training loss and validation accuracy curves.
+
+## Methods
+- **CNN**: Five-layer convolutional network with batch normalisation, ReLU activations, and max pooling. Trained for 18 epochs using Adam optimiser and CrossEntropyLoss.
+- **ViT**: Implemented from scratch with a learnable CLS token, sinusoidal positional embeddings, and stacked self-attention and feed-forward layers. Trained with AdamW and learning rate scheduling.
   
 ## Key Results
 - **Test Accuracy**:
   - CNN: 79%
-  - ViT (trained from scratch): 56%
+  - ViT: 56%
 - *Observations*:
-  - The CNN significantly outperforms the ViT, showing CNNs perform better on small datasets due to their inductive biases.
+  - The CNN significantly outperforms the ViT, demonstrating that CNNs perform better on small datasets due to their inductive biases.
   - The ViT underperforms because transformers generally require substantially larger datasets to learn effective representations when trained from scratch.
   - This comparison emphasises the importance of aligning model architecture choice with dataset size.
  
@@ -39,9 +44,9 @@ jupyter notebook
 ```
 
 ## Summary
-The CNN was highly effective for this small-scale image classification task, as it achieved 79% test accuracy on Oxford-IIIT Pets. By contrast, a ViT trained entirely from scratch reached only 56%, reflecting the data-hungry nature of transformer-based models. These results highlight how dataset size and architectural inductive biases influence model performance.
+A CNN built from scratch is highly effective for this small-scale image classification task, achieving 79% test accuracy. By contrast, a ViT implemented from scratch reached only 56%, reflecting the data-hungry nature of transformer-based models. These results highlight how dataset size and architectural inductive biases influence model performance.
 
 ## Reproducibility/Notes
 - Random seeds are fixed where applicable to ensure consistent results.
 - Both model notebooks are self-contained and can be run end-to-end.
-- Ensure the Oxford-IIIT Pets dataset is placed in the same folder as the notebooks before running.
+- Ensure the Oxford-IIIT Pets dataset is unzipped and placed in the same folder as the notebooks before running.
