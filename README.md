@@ -1,6 +1,6 @@
 # Oxford-IIIT Pets Image Classification
 
-**Note**: This project was completed as part of the AIML331 course at Te Herenga Waka — Victoria University of Wellington.
+**Note**: This project was completed as part of the AIML331 course at Te Herenga Waka — Victoria University of Wellington. The course required a minimum accepted accuracy of 45% for the CNN and 35% for the ViT.
 
 ## Objective
 Classify images from the Oxford-IIIT Pets dataset re-labelled into four broad categories (long-haired cats, short-haired cats, long-haired dogs, short-haired dogs) using both convolutional neural networks (CNN) and vision transformers (ViT) built from scratch in PyTorch. Examine how architectures with different inductive biases perform when trained on a relatively small image dataset.
