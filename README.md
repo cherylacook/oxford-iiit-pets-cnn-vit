@@ -35,6 +35,7 @@ Training loss and validation accuracy curves are included for both models:
 
 **CNN**:
 - ![Training Loss](figures/cnn-training-loss-curve.jpeg), ![Validation Accuracy](figures/cnn-validation-accuracy-curve.jpeg)
+
 **ViT**:
 - ![Training Loss](figures/vit-training-loss-curve.jpeg), ![Validation Accuracy](figures/vit-validation-accuracy-curve.jpeg)
      
