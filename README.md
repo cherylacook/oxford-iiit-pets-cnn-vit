@@ -34,10 +34,12 @@ Once downloaded, *unzip the contents into the same folder as the notebooks.*
 Training loss and validation accuracy curves are included for both models:
 
 **CNN**:
-- ![Training Loss](figures/cnn-training-loss-curve.jpeg), ![Validation Accuracy](figures/cnn-validation-accuracy-curve.jpeg)
+- ![Training Loss](figures/cnn-training-loss-curve.jpeg)
+- ![Validation Accuracy](figures/cnn-validation-accuracy-curve.jpeg)
 
 **ViT**:
-- ![Training Loss](figures/vit-training-loss-curve.jpeg), ![Validation Accuracy](figures/vit-validation-accuracy-curve.jpeg)
+- ![Training Loss](figures/vit-training-loss-curve.jpeg)
+- ![Validation Accuracy](figures/vit-validation-accuracy-curve.jpeg)
      
 ## How to Run
 Python version: 3.10+
