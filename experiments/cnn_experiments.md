@@ -1,6 +1,7 @@
 # CNN Experiments
 
 ## Baseline of 5 layers, ReLU activation, with batch normalisation → 79% test accuracy
+
 **Only one parameter varied at a time from baseline.**
 
 | Parameter Changed   | Values Tested            | Test Accuracy               |
@@ -8,3 +9,11 @@
 | Batch Normalisation | With / Without           | 79% / 66%                   |
 | Activation Function | ReLU / LeakyReLU / Swish | 79% / 78% / 76%             |
 | Hidden Layers       | 3 / 4 / 5 / 6 / 7        | 54% / 69% / 79% / 71% / 68% |
+
+## Interpretation of Results
+
+**Batch Normalisation**
+
+**Activation Function**
+
+**Hidden Layer Count**
