@@ -1,6 +1,6 @@
 # CNN Experiments
 
-## Baseline: 5 layers, ReLU activation, with batch normalisation: 79% test accuracy
+## Baseline of 5 layers, ReLU activation, with batch normalisation: 79% test accuracy
 **Only one parameter varied at a time from baseline.**
 
 | Parameter Changed   | Values Tested            | Test Accuracy               | Observation                                                                      |
