@@ -17,7 +17,7 @@ Once downloaded, *unzip the contents into the same folder as the notebooks.*
 - `vit_pet_classification.ipynb` - End-to-end ViT implementation from scratch in PyTorch.
 - `compute_dataset_mean_std.ipynb` - Computes dataset channel-wise mean and standard deviation (std) for normalisation.
 - `requirements.txt` - Python dependencies.
-- `figures/` - Contains screenshots of TensorBoard training loss and validation accuracy curves.
+- `figures/` - Contains screenshots of the TensorBoard training loss and validation accuracy curves.
 - `experiments/` - Contains additional experiments with architecture and hyperparameter variations.
 
 ## Methods
@@ -33,7 +33,7 @@ Once downloaded, *unzip the contents into the same folder as the notebooks.*
   - The ViT underperforms because transformers generally require substantially larger datasets to learn effective representations when trained from scratch.
   - This comparison emphasises the importance of aligning model architecture choice with dataset size.
 
-Additional experimentation with different model architectures and hyperparameters (CNN layer depth, activation functions, batch normalisation; ViT attention heads, layers, patch sizes, positional embeddings) is provided in `experiments/`.
+Additional experimentation is provided in `experiments/`, covering CNN layer depth, activation functions, batch normalisation, and ViT attention heads, layers, patch sizes, and positional embeddings.
 
      
 ## How to Run
