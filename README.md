@@ -17,7 +17,8 @@ Once downloaded, *unzip the contents into the same folder as the notebooks.*
 - `vit_pet_classification.ipynb` - End-to-end ViT implementation from scratch in PyTorch.
 - `compute_dataset_mean_std.ipynb` - Computes dataset channel-wise mean and standard deviation (std) for normalisation.
 - `requirements.txt` - Python dependencies.
-- `figures` - Folder containing screenshots of TensorBoard training loss and validation accuracy curves.
+- `figures/` - Contains screenshots of TensorBoard training loss and validation accuracy curves.
+- `experiments/` - Contains additional experiments with architecture variations.
 
 ## Methods
 - **CNN**: Five-layer convolutional network with batch normalisation, ReLU activations, and max pooling. Trained for 18 epochs using Adam optimiser and CrossEntropyLoss.
@@ -31,17 +32,9 @@ Once downloaded, *unzip the contents into the same folder as the notebooks.*
   - The CNN significantly outperforms the ViT, demonstrating that CNNs perform better on small datasets due to their inductive biases.
   - The ViT underperforms because transformers generally require substantially larger datasets to learn effective representations when trained from scratch.
   - This comparison emphasises the importance of aligning model architecture choice with dataset size.
- 
-## Visualisation
-Training loss and validation accuracy curves are included for both models:
 
-**CNN**:
-- ![Training Loss](figures/cnn-training-loss-curve.jpeg)
-- ![Validation Accuracy](figures/cnn-validation-accuracy-curve.jpeg)
+Additional experimentation with different model architectures and hyperparameters (CNN layer depth, activation functions, batch normalisation; ViT attention heads, layers, patch sizes, positional embeddings) is provided in `experiments/`.
 
-**ViT**:
-- ![Training Loss](figures/vit-training-loss-curve.jpeg)
-- ![Validation Accuracy](figures/vit-validation-accuracy-curve.jpeg)
      
 ## How to Run
 Python version: 3.10+
