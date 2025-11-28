@@ -3,7 +3,7 @@
 This project was *completed as part of AIML331* at Te Herenga Waka — Victoria University of Wellington. The course required a minimum accuracy of 45% for the CNN and 35% for the ViT, and the final models achieved 79% test accuracy (CNN) and 56% (ViT).
 
 ## Objective
-Classify images from the Oxford-IIIT Pets dataset re-labelled into four broad categories (long-haired cats, short-haired cats, long-haired dogs, short-haired dogs) using both convolutional neural networks (CNN) and vision transformers (ViT) built from scratch in PyTorch. Examine how architectures with different inductive biases perform when trained on a relatively small image dataset.
+Classify images from the Oxford-IIIT Pets dataset - re-labelled into four broad categories (long-haired cats, short-haired cats, long-haired dogs, short-haired dogs) - using both convolutional neural networks (CNN) and vision transformers (ViT) built from scratch in PyTorch. Examine how architectures with different inductive biases perform when trained on a relatively small image dataset.
 
 ## Dataset
 This project requires the Oxford-IIIT Pets dataset. Due to the file size and structure, it is provided externally as a ZIP file.
