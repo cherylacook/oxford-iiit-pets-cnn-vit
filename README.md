@@ -18,7 +18,7 @@ Once downloaded, *unzip the contents into the same folder as the notebooks.*
 - `compute_dataset_mean_std.ipynb` - Computes dataset channel-wise mean and standard deviation (std) for normalisation.
 - `requirements.txt` - Python dependencies.
 - `figures/` - Contains screenshots of TensorBoard training loss and validation accuracy curves.
-- `experiments/` - Contains additional experiments with architecture variations.
+- `experiments/` - Contains additional experiments with architecture and hyperparameter variations.
 
 ## Methods
 - **CNN**: Five-layer convolutional network with batch normalisation, ReLU activations, and max pooling. Trained for 18 epochs using Adam optimiser and CrossEntropyLoss.
