@@ -2,9 +2,9 @@
 
 ## Baseline of 5 transformer layers, 5 attention heads, patch size of 8, with positional embeddings → 56% test accuracy
 
-**Only one parameter varied at a time from baseline.**
-
 Note: Training loss and validation accuracy curves were monitored during experimentation. However, for conciseness, only final test accuracies are reported here.
+
+**Only one parameter varied at a time from baseline.**
 
 |   Parameter Changed   |       Values Tested      |        Test Accuracy        |
 |:---------------------:|:------------------------:|:---------------------------:|
